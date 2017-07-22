@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jeffhawker/Desktop/HomeIRApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b85c6c0ef9fedfb1b6b6cafc01f9b379f3a028ed">
+        <dex dex="/Users/jeffhawker/Desktop/HomeIRApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_db187c044afdb41a4a68cd4808c8f1f108ca6da2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jeffhawker/Desktop/HomeIRApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/jeffhawker/Desktop/HomeIRApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_db1216bdb84edadc55f59675edac92fe0fc4ce1a/classes.dex" />
+    </item>
+
+</items>

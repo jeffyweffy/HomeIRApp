@@ -1,0 +1,477 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_column="4"
+    android:layout_row="7"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@android:color/background_dark"
+    android:id="@+id/gridLayout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TV Power"
+        android:id="@+id/tvPower"
+        android:clickable="true"
+        style="@style/AppTheme"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Radio"
+        android:id="@+id/textView"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="top|center"
+        android:layout_row="0"
+        android:layout_column="2" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Astra Hits"
+        android:id="@+id/astraHitsRadioButton"
+        android:checked="false"
+        android:clickable="true"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center|right"
+        android:minHeight="30dp"
+        android:minWidth="90dp"
+        android:layout_row="0"
+        android:layout_column="2" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classic"
+        android:id="@+id/classicRadioButton"
+        android:checked="false"
+        android:clickable="true"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@android:color/holo_green_light"
+        android:minHeight="30dp"
+        android:minWidth="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center|right"
+        android:layout_row="1"
+        android:layout_column="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun Kids"
+        android:id="@+id/funKidsRadioButton"
+        android:clickable="true"
+        android:checked="false"
+        style="?android:attr/buttonStyleSmall"
+        android:background="@android:color/holo_green_light"
+        android:minWidth="90dp"
+        android:minHeight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center|right"
+        android:layout_row="2"
+        android:layout_column="2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:id="@+id/tvVolumeUpButton"
+        android:clickable="true"
+        android:minWidth="90dp"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Volume"
+        android:id="@+id/volumeTextView"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:layout_marginTop="-15dp"
+        android:padding="10dp"
+        android:minWidth="90dp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_row="2"
+        android:layout_column="0" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Down"
+        android:id="@+id/tvVolumeDownButton"
+        android:clickable="true"
+        android:layout_marginTop="-25dp"
+        android:minWidth="90dp"
+        android:layout_row="3"
+        android:layout_column="0" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:id="@+id/tvChannelUpButton"
+        android:clickable="true"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:minWidth="90dp"
+        android:layout_marginLeft="10dp"
+        android:enabled="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Channel"
+        android:id="@+id/channelTextView"
+        android:textAlignment="gravity"
+        android:singleLine="false"
+        android:gravity="center"
+        android:layout_marginTop="-15dp"
+        android:textColor="@android:color/darker_gray"
+        android:minWidth="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_row="2"
+        android:layout_column="1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Down"
+        android:id="@+id/tvChannelDownButton"
+        android:clickable="true"
+        android:layout_row="3"
+        android:layout_marginTop="-25dp"
+        android:layout_column="1"
+        android:minWidth="90dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音声切換"
+        android:id="@+id/tvChangeLanguageButton"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="center"
+        android:minWidth="80dp"
+        android:layout_row="4"
+        android:layout_column="0" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="入力切換"
+        android:id="@+id/tvChangeInputButton"
+        android:layout_marginTop="-35dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="center"
+        android:minWidth="80dp"
+        android:layout_row="5"
+        android:layout_column="0" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="録画一覧"
+        android:id="@+id/tvRecordingListTVButton"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:minWidth="80dp"
+        android:layout_gravity="center"
+        android:layout_row="4"
+        android:layout_column="1" />
+
+    <Button
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sony Power"
+        android:id="@+id/sonyPowerButton"
+        android:clickable="true"
+        android:background="@android:color/holo_red_light"
+        android:padding="10dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-30dp"
+        android:layout_row="5"
+        android:layout_column="2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:id="@+id/sonyVolumeUpButton"
+        android:minWidth="90dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_gravity="right|center"
+        android:layout_marginLeft="25dp"
+        android:layout_row="5"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Volume"
+        android:id="@+id/sonyVolumeTextView"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="20dp"
+        android:padding="0dp"
+        android:layout_row="5"
+        android:layout_column="2" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Down"
+        android:id="@+id/sonyVolumeDownButton"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_gravity="right"
+        android:minWidth="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="-10dp"
+        android:layout_row="6"
+        android:layout_column="2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATV Play"
+        android:id="@+id/appleTVPlayPauseButton"
+        android:clickable="true"
+        android:backgroundTint="@android:color/holo_purple"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:minWidth="80dp"
+        android:layout_row="6"
+        android:layout_column="2" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRightButton"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="-30dp"
+        android:layout_gravity="left"
+        android:layout_row="6"
+        android:layout_column="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDownButton"
+        android:minWidth="60dp"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:minHeight="60dp"
+        android:enabled="true"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="-10dp"
+        android:layout_row="6"
+        android:layout_column="1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLeftButton"
+        android:width="60dp"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:minHeight="60dp"
+        android:enabled="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="left"
+        android:layout_row="6"
+        android:layout_column="0" />
+
+    <ImageView
+        android:id="@+id/imageViewTVCentre"
+        android:src="@mipmap/tv_centralrocker"
+        android:contentDescription="tvRockerControl"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="left"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_rowSpan="3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUpButton"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:minHeight="50dp"
+        android:minWidth="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="-10dp"
+        android:enabled="true"
+        android:layout_gravity="left"
+        android:layout_row="5"
+        android:layout_column="1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSelectButton"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
+        android:enabled="true"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_row="6"
+        android:layout_column="1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="戻る"
+        android:id="@+id/tvBackButton"
+        android:enabled="true"
+        android:minWidth="80dp"
+        android:layout_gravity="left|bottom"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:clickable="true" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="削除"
+        android:id="@+id/tvYellowButton"
+        android:enabled="true"
+        android:minWidth="80dp"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="-60dp"
+        android:layout_row="7"
+        android:layout_column="2"
+        android:backgroundTint="#f8ff10"
+        android:clickable="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kodi Play"
+        android:id="@+id/kodiPlayPauseButton"
+        android:enabled="true"
+        android:minWidth="80dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="60dp"
+        android:layout_row="7"
+        android:layout_column="2"
+        android:backgroundTint="#3f04ff"
+        android:clickable="true"
+        android:layout_marginTop="-50dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        android:padding="10dp"
+        android:id="@+id/airconPowerOnButton"
+        android:enabled="true"
+        android:minWidth="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_row="8"
+        android:layout_column="2"
+        android:clickable="true"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginTop="-15dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:padding="10dp"
+        android:id="@+id/airconPowerOffButton"
+        android:enabled="true"
+        android:minWidth="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="-40dp"
+        android:layout_row="8"
+        android:layout_column="3"
+        android:clickable="true"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginTop="-15dp"
+        android:nestedScrollingEnabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Aircon"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textViewAircon"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="top|center"
+        android:layout_row="7"
+        android:layout_column="2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewOffline"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:background="@android:drawable/presence_offline"
+        android:visibility="invisible"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:layout_marginLeft="50dp" />
+
+</GridLayout>
